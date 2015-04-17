@@ -25,16 +25,17 @@ appropriately. I disagree.
 The problem is when SSHing into machines without your custom terminfo
 entry installed---other machines don't know what to do with it. They
 resort to safe defaults which means everything gets screwy. In order to
-get around it, you have to make sure any `.bash_profiles`, `.zshrc` or
-the like set your `$TERM` to `xterm-256color` or at least something
-compatible, lest you suffer losing all of your pretty visual features in
-Vim. To me, this is unacceptable.
+get around it, you have to make sure to add an appopriate line to your
+remote `.bash_profile`, `.zshrc` or the similar file that sets your
+`$TERM` to `xterm-256color` or at least something compatible, lest you
+suffer losing all of your pretty visual features in Vim. To me, this is
+unacceptable.
 
 # My solution
 
 Simply override the local entry for `xterm-256color`! Sure, it's a bit
-uncouth, but your only affecting your own machine, right? The worst
-thing that can happen is that remote machines won't display italics.
+uncouth, but you're only affecting your own machine, right? The worst
+that can happen is that remote machines won't display italics.
 Conversely, you _probably_ don't SSH into your Mac, so the fact that you
 have a "damaged" terminfo entry is entirely irrelevant. If you're still
 with me, do the following:
