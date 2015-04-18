@@ -40,21 +40,21 @@ Conversely, you _probably_ don't SSH into your Mac, so the fact that you
 have a "damaged" terminfo entry is entirely irrelevant. If you're still
 with me, do the following:
 
-Write the installed terminfo entry to a text file using `infocmp`:
+Write the installed terminfo entry to a temporary text file using `infocmp`:
 
-    infocmp xterm-256color > xterm-256color.terminfo
+    infocmp xterm-256color > /tmp/xterm-256color.terminfo
 
-Then, add the magic line `sitm=\E[3m, ritm=\E[23m,`, which defines the
+Then, append the magic line `sitm=\E[3m, ritm=\E[23m,` which defines the
 escape codes that iTerm will interpret to render things in pretty
 italics:
 
-    echo "\t"'sitm=\E[3m, ritm=\E[23m,' >> xterm-256color.terminfo
+    printf '\tsitm\\E[3m, ritm=\\E[23m,\n' >> /tmp/xterm-256color.terminfo
 
 And now overwrite the existing terminfo entry for `xterm-256color`:
 
-    tic xterm-256color
+    tic /tmp/xterm-256color.terminfo
 
-Now open a new terminal and type the following to test:
+Now open a *new* terminal and type the following to test:
 
     echo `tput sitm`italics`tput ritm`
 
@@ -63,9 +63,9 @@ Now open a new terminal and type the following to test:
 Here are all the steps combined in one dangerously copy-pastable
 snippet:
 
-    infocmp xterm-256color > xterm-256color.terminfo
-    echo "\t"'sitm=\E[3m, ritm=\E[23m,' >> xterm-256color.terminfo
-    tic xterm-256color
+    infocmp xterm-256color > /tmp/xterm-256color.terminfo
+    printf '\tsitm\\E[3m, ritm=\\E[23m,\n' >> /tmp/xterm-256color.terminfo
+    tic /tmp/xterm-256color.terminfo
 
 # Caveats
 
