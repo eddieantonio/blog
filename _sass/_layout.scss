@@ -218,7 +218,7 @@
         }
     }
 
-    h3 {
+    h3, dt  {
         font-size: 26px;
 
         @include media-query($on-laptop) {
@@ -232,5 +232,19 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+
+    p > img {
+        display: block;
+        margin: auto;
+    }
+}
+
+.footnotes {
+    &::before {
+        content: '';
+        display: block;
+        border: 1px inset;
+        margin-bottom: $spacing-unit;
     }
 }
