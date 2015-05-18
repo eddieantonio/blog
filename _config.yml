@@ -12,7 +12,10 @@ github_username:  eddieantonio
 markdown: kramdown
 drafts: no
 permalink: pretty
+highlighter: pygments
 
+# Defaults sets everything to a post, with me as the author and comments
+# enabled.
 defaults:
   -
     scope:
