@@ -118,7 +118,7 @@ operating system function actually gets used is determined by an
 integer, and this file lists all of those integers for my particular
 install of OS X.
 
-And what did I do with this file? I grep'd it, and found syscall for
+And what did I do with this file? I grep'd it, and found the syscall for
 [`sigsuspend(2)`][sigsuspend]. Yes. My file extracts the system call
 constant from the C header file. And then it invokes it using
 `Kernel#syscall`. Because I could, and that is literally the only reason
@@ -181,7 +181,7 @@ regular expression, but I knew there had to be a better way.
 
 This led me to find out whether Ruby has standard libraries to parse
 itself. And it does! I used [Ripper][] to lex the input and assert that
-it was a valid identifier. And hopefully this enough to prevent
+it was a valid identifier. And hopefully this is enough to prevent
 arbitrary code execution!
 
 [Ripper]: http://ruby-doc.org/stdlib-2.2.2/libdoc/ripper/rdoc/Ripper.html
