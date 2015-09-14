@@ -1,16 +1,10 @@
 # Site settings
 title: "eddieantonio/blog"
-name: "eddieantonio/blog"
-author:
-  name: Eddie Antonio Santos
-  email: easantos@ualberta.ca
-  uri: http://www.eddieantonio.ca/
-
 email: easantos@ualberta.ca
 description: > # this means to ignore newlines until "baseurl:"
   My thoughts on software, linguistics, and jazz fusion.
 baseurl: "/blog" # the subpath of your site, e.g. /blog/
-url: "http://www.eddieantonio.ca/blog" # the base hostname & protocol for your site
+url: "http://www.eddieantonio.ca" # the base hostname & protocol for your site
 twitter_username: _eddieantonio
 github_username:  eddieantonio
 
@@ -44,4 +38,3 @@ gems:
  - jemoji # Most important!
  - jekyll-redirect-from
  - jekyll-sitemap
- - jekyll-feed
