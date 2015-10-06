@@ -4,8 +4,8 @@ title:  Web Development Interview Questions
 
 A while ago, I compiled a list of sample interview questions for
 a friend wanting to apply for front-end web development jobs; The
-following is what I came up with. It is by no means "complete" or
-"comprehensive", but it does contain several items an aspiring applicant
+following is what I came up with. It is by no means complete or
+comprehensive, but it does contain several items an aspiring applicant
 might want to know about. Note: several of these questions are trick
 questions meant to mislead a nervous applicant (it's mean, I know, but
 gotta be confident about your knowledge!).
@@ -14,7 +14,7 @@ That fact that something is on this list **does not** imply that you
 *need* to know this to get a web job. Rather, it's perhaps a thing you
 may want to learn in your never-ending quest to build your web dev
 chops. I recommend the following video by Kathy Sierra on practical
-skill-boodling:
+skill-building:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FKTxC9pl-WM" frameborder="0" allowfullscreen></iframe>
 
@@ -31,7 +31,7 @@ skill-boodling:
  - What is jQuery?
  - What is a clearfix?
    - Why does it work?
-   - How can we avoid using a clearfix to make layouts? 
+   - How can we avoid using a clearfix to make layouts?
  - What resources should I consult if I have a question about [browser
    compatibility](http://caniuse.com/)?
  - What references should I consult that are based on the official web standards?
