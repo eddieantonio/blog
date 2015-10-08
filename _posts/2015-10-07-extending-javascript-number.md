@@ -73,8 +73,7 @@ for (let i of 5) {
 ~~~
 
 As for performance, it's up to the JavaScript engine (V8 or
-SpiderMonkey, or what-have-you) to optimize one approach over the other
-faster than the other.
+SpiderMonkey, or what-have-you) to optimize one approach over the other.
 
 The `for (let i of number)` syntax is read with the same intent as the
 classical for-loop, but with a minimal amount of tokens. Less tokens,
