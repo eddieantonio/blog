@@ -12,7 +12,7 @@ github_username:  eddieantonio
 markdown: kramdown
 drafts: no
 permalink: pretty
-highlighter: pygments
+highlighter: rouge
 
 # Defaults sets everything to a post, with me as the author and comments
 # enabled.
@@ -38,3 +38,4 @@ gems:
  - jemoji # Most important!
  - jekyll-redirect-from
  - jekyll-sitemap
+ - jekyll-gist
