@@ -7,8 +7,8 @@ I wrote a paper on crash report bucketing.
 
 You know when a program crashes, and it asks you to "Send a report," so
 you just click "Okay" to make the message go away? This paper addresses
-the other side of that story, where thousands of people dismiss that
-message with an innocent "Okay" every single day leads to a deluge of
+the other side of that story, where several thousands of people dismissing that
+message with an innocent "Okay" every single day leads to a veritable deluge of
 crash reports that leave the developers with more reports than they know
 how to deal with.
 
