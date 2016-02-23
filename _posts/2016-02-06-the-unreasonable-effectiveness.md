@@ -46,5 +46,5 @@ Still interested? [Read the preprint!][preprint]
 
 [abram]: http://softwareprocess.es/
 [josh]: http://jcc.space/
-[preprint]: https://peerj.com/preprints/1705v1/
+[preprint]: https://peerj.com/preprints/1705/?td=bl
 [PartyCrasher]: https://github.com/orezpraw/partycrasher
