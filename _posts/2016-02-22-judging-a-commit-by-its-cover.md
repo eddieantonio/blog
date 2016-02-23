@@ -15,7 +15,10 @@ So: Are commits that *look* fishy...
 Is my hunch true? (Spoilers: <span class="spoliers">Marginally</span>).
 
 To test, we correlated build status from [Travis-CI][travis] with [*n*-gram
-language models][n-grams] on commit messages.
+language models][n-grams] on commit messages. Here's the abstract:
+
+> Developers summarize their changes to code in commit messages. When a message seems “unusual,” however, this puts doubt into the quality of the code contained in the commit. We trained 
+> n-gram language models and used cross-entropy as an indicator of commit message “unusualness” of over 120 000 commits from open source projects. Build statuses collected from Travis-CI were used as a proxy for code quality. We then compared the distributions of failed and successful commits with regards to the “unusualness” of their commit message. Our analysis yielded significant results when correlating cross-entropy with build status.
 
 Intrigued? [Read the preprint!][preprint] (And fork the [replication
 code][code] and [data][data]!)
@@ -33,4 +36,4 @@ reviews and comments!
 [shaiful]: https://sites.google.com/site/shaifulhome/home
 [code]: https://github.com/eddieantonio/judging-commits
 [data]: https://drive.google.com/open?id=0ByMXxDHxG3WSbzEtc1BoTk1NcTA
-[n-gram]: https://en.wikipedia.org/wiki/N-gram#n-gram_models
+[n-grams]: https://en.wikipedia.org/wiki/N-gram#n-gram_models
