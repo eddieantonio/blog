@@ -4,7 +4,7 @@ title:  Judging a Commit by Its Cover
 
 For the [MSR 2016 Challenge][msr], I applied **data science** to test
 a gut feeling I had: commits with weird, unusual log messages are often
-of lower quality than code with boring, ordinary commit messages.
+committing lower quality than code than boring, ordinary commit messages.
 
 So: Are commits that *look* fishy...
 
@@ -22,7 +22,7 @@ code][code] and [data][data]!)
 
 Acknowledgements to my supervisor, [Abram Hindle], and my colleagues [S.
 Kalen Romansky][kalen], and [Shaiful Chowdhury][shaiful] for their
-reviews and comments.
+reviews and comments!
 
 [msr]: http://2016.msrconf.org/#/challenge
 [commit]: https://github.com/orezpraw/unnaturalcode/commit/7c15e369fe58b1537141eb31f28f549a01d10380
@@ -33,3 +33,4 @@ reviews and comments.
 [shaiful]: https://sites.google.com/site/shaifulhome/home
 [code]: https://github.com/eddieantonio/judging-commits
 [data]: https://drive.google.com/open?id=0ByMXxDHxG3WSbzEtc1BoTk1NcTA
+[n-gram]: https://en.wikipedia.org/wiki/N-gram#n-gram_models
