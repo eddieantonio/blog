@@ -242,10 +242,13 @@
         }
     }
 
-    /* This should be treated as a "figure". */
-    p img:only-child  {
+    /* These should be treated as figures. */
+    p img:only-child,
+    iframe,
+    twitterwidget {
         display: block;
         margin: auto;
+        margin-bottom: .5em;
     }
 }
 
