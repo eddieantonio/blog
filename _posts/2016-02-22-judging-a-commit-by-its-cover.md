@@ -17,11 +17,17 @@ Is my hunch true? (Spoilers: <span class="spoliers">Marginally</span>).
 To test, we correlated build status from [Travis-CI][travis] with [*n*-gram
 language models][n-grams] on commit messages. Here's the abstract:
 
-> Developers summarize their changes to code in commit messages. When a message seems “unusual,” however, this puts doubt into the quality of the code contained in the commit. We trained 
+> Developers summarize their changes to code in commit messages. When a message seems “unusual,” however, this puts doubt into the quality of the code contained in the commit. We trained
 > n-gram language models and used cross-entropy as an indicator of commit message “unusualness” of over 120 000 commits from open source projects. Build statuses collected from Travis-CI were used as a proxy for code quality. We then compared the distributions of failed and successful commits with regards to the “unusualness” of their commit message. Our analysis yielded significant results when correlating cross-entropy with build status.
+
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/UPQlIbwksgw" frameborder="0"
+allowfullscreen></iframe>
 
 Intrigued? [Read the preprint!][preprint] (And fork the [replication
 code][code] and [data][data]!)
+
+**EDIT**: Added my presentation.
 
 Acknowledgements to my supervisor, [Abram Hindle], and my colleagues [S.
 Kalen Romansky][kalen], and [Shaiful Chowdhury][shaiful] for their
