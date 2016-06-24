@@ -184,7 +184,7 @@ footer, or the general man page structure to the output.
 Building with a Makefile
 ========================
 
-However, I often create man pages in conjunction with a simple `make`
+I often create man pages in conjunction with a simple `make`
 build system. The following is a file you can copy paste or `include`
 into your Makefile to make it convert any Markdown-formatted man page
 into appropriate troff output.
