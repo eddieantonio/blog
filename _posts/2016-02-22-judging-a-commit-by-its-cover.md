@@ -12,7 +12,7 @@ So: Are commits that *look* fishy...
 
 ...actually hiding dubious code?
 
-Is my hunch true? (Spoilers: <span class="spoliers">Marginally</span>).
+Is my hunch true? (Spoilers: <span class="spoilers">Marginally</span>).
 
 To test, we correlated build status from [Travis-CI][travis] with [*n*-gram
 language models][n-grams] on commit messages. Here's the abstract:

@@ -264,11 +264,15 @@
     }
 }
 
-.spoliers {
+.spoilers, .spoilers * {
     color: transparent;
     outline: 1px dotted grey;
 }
 
-.spoliers:hover, .spoiler:active {
+.spoilers:hover,
+.spoilers:active,
+.spoilers:hover *,
+.spoilers:active *
+{
     color: inherit;
 }
