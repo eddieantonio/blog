@@ -107,7 +107,7 @@ For example, my `hello` binary will live in the following path:
 
 Its corresponding man page will live beside it here:
 
-    /usr/local/share/man/man1/imgcat.1
+    /usr/local/share/man/man1/hello.1
 
 The metadata block
 ------------------
