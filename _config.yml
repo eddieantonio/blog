@@ -33,7 +33,7 @@ defaults:
       layout: post
 
 # All the gems that GitHub pages supports.
-gems:
+plugins:
  - jekyll-mentions
  - jemoji # Most important!
  - jekyll-redirect-from
