@@ -83,10 +83,10 @@ transliterate words that are do not have the structure of a Cree word.
 However, all three of the mentioned transliterators do attempt to
 transliterate "trail" with differing results:[^2]
 
-|:--------------------------|--------|
-|Maskwacîs Cree Dictionary  | ᐟrᐊᐃl  |
-|Algonquian Language        | ᐟᕒᐊᐃᐪ  |
-|Syllabics.net              | ᐟᕒᐊᐃᓬ  |
+|:----------------------------|----------|
+| Maskwacîs Cree Dictionary   | ᐟrᐊᐃl    |
+| Algonquian Linguistic Atlas | ᐟᕒᐊᐃᐪ    |
+| Syllabics.net               | ᐟᕒᐊᐃᓬ    |
 
 
 [enoch]: http://enochnation.ca/
@@ -144,11 +144,11 @@ comprehend how to apply this rule myself.
 Here's a breakdown of the previous issues, and whether each
 transliterator can handle it correctly.
 
-|                           | Word-final "hk" | Non-Cree words | Long vowels |
-|:--------------------------|----------------:|---------------:|------------:|
-| Maskwacîs Cree Dictionary |        ❌       |       ❌       |     ❌      |
-| Algonquian Language       |        ✅       |       ❌       |     ✅      |
-| Syllabics.net             |        ✅       |       ❌       |     ❌      |
+|                             | Word-final "hk"   | Non-Cree words   | Long vowels   |
+|:----------------------------|------------------:|-----------------:|--------------:|
+| Maskwacîs Cree Dictionary   | ❌                | ❌               | ❌            |
+| Algonquian Linguistic Atlas | ✅                | ❌               | ✅            |
+| Syllabics.net               | ✅                | ❌               | ❌            |
 
 
 Where's the source code?
@@ -173,7 +173,7 @@ following test cases:
  - [Maskekosihk trail](https://crk-orthography-demo.herokuapp.com/#!sro:Maskekosihk%20trail)
  - [êwêpâpîhkêwêpinamahk](https://crk-orthography-demo.herokuapp.com/#!sro:êwêpâpîhkêwêpinamahk)
  - [ēwēpâpīhkēwēpinamahk](https://crk-orthography-demo.herokuapp.com/#!sro:ēwēpâpīhkēwēpinamahk)
- - [ēwēpâpīhkēwēpinamahk](https://crk-orthography-demo.herokuapp.com/#!sro:ewepapihkewepinamahk)
+ - [ewepapihkewepinamahk](https://crk-orthography-demo.herokuapp.com/#!sro:ewepapihkewepinamahk)
 
 <!--
 It can also convert from syllabics to SRO:
