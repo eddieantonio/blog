@@ -101,7 +101,7 @@ vowels are written with a dot above in syllabics. The exception is for
 "ê" because it is always long; as a result, some writers also drop the
 diacritic when writing "e" in SRO as well. It's important to differentiate
 between long and short vowels, because it makes distinctions between
-words. For example, nipiy/ᓂƣᕀ means "water" while nîpiy/ᓃᐱᕀ means
+words. For example, nipiy/ᓂᐱᕀ means "water" while nîpiy/ᓃᐱᕀ means
 "leaf". However, there is such a thing as "plain" script, where the
 vowel dots are omitted, and [pointed] script where the vowels have all
 dots.
