@@ -167,7 +167,7 @@ converters online, or write their own code to do the conversion.
 My solution was to create a [Python library][pypi] that is **free and
 open source**.
 
-It does handles all the issues previously mentioned. Try it with the
+It handles all the issues previously mentioned. Try it with the
 following test cases:
 
  - [Maskekosihk trail](https://crk-orthography-demo.herokuapp.com/#!sro:Maskekosihk%20trail)
