@@ -48,7 +48,7 @@ Then, append the magic line `sitm=\E[3m, ritm=\E[23m,` which defines the
 escape codes that iTerm will interpret to render things in pretty
 italics:
 
-    printf '\tsitm\\E[3m, ritm=\\E[23m,\n' >> /tmp/xterm-256color.terminfo
+    printf '\tsitm=\\E[3m, ritm=\\E[23m,\n' >> /tmp/xterm-256color.terminfo
 
 And now overwrite the existing terminfo entry for `xterm-256color`:
 
