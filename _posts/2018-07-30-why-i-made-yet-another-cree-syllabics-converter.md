@@ -17,7 +17,9 @@ easier to type it in SRO first, then use a *transliterator* to convert
 from SRO to syllabics.
 
 In summary, I created a new bidirectional transliterator called
-[`crk_orthography`][repo]. It's a *new* transliterator, because several
+[`cree-sro-syllabics`][repo]
+(**Edit**: Try it online at [syllabics.app](https://syllabics.app/)!).
+It's a *new* transliterator, because several
 transliterators already exist. So what do the others look like?
 
 [Plains Cree]: https://en.wikipedia.org/wiki/Plains_Cree
@@ -66,7 +68,7 @@ erroneous "ᐦᐠ" cluster at the end.
 Some transliterators attempt to convert every Latin character, even if
 it doesn't make sense. Take the case of "Maskêkosihk Trail"---a road
 that goes from Edmonton to [Enoch Cree Nation][enoch]. The City of
-Edmonton unveiled the street sign, and they also unveiled an
+Edmonton unveiled the street sign, and, in the process, they unveiled an
 embarrassment:
 
 ![Maskêkosihk trail rendered as "ᒪᐢᑫᑯᓯᐦᐠ  ᐟrᐊᐃl"]({{ site.baseurl }}/images/yasc/mayor-and-chief.JPG)
@@ -79,7 +81,7 @@ error as mentioned above, but it half-transliterates *the English word*
 "ᐟrᐊᐃl", which *contains Latin characters in the transliteration!*
 
 In my opinion, an SRO to syllabics transliterator should refuse to
-transliterate words that are do not have the structure of a Cree word.
+transliterate words that do not have the structure of a Cree word.
 However, all three of the mentioned transliterators do attempt to
 transliterate "trail" with differing results:[^2]
 
@@ -161,40 +163,48 @@ connection, they can't. They have to either reverse-engineer the
 converters online, or write their own code to do the conversion.
 
 
-`crk_orthography`: an open-source Python library for syllabics conversion
------------------------------------------------------------------------
+`cree-sro-syllabics`: an open-source Python and JavaScript library for syllabics conversion
+-------------------------------------------------------------------------------------------
 
 My solution was to create a [Python library][pypi] that is **free and
 open source**.
 
+**EDIT**: (*2018-12-06*) [Now also available for JavaScript][npm]!
+
 It handles all the issues previously mentioned. Try it with the
 following test cases:
 
- - [Maskekosihk trail](https://crk-orthography-demo.herokuapp.com/#!sro:Maskekosihk%20trail)
- - [êwêpâpîhkêwêpinamahk](https://crk-orthography-demo.herokuapp.com/#!sro:êwêpâpîhkêwêpinamahk)
- - [ēwēpâpīhkēwēpinamahk](https://crk-orthography-demo.herokuapp.com/#!sro:ēwēpâpīhkēwēpinamahk)
- - [ewepapihkewepinamahk](https://crk-orthography-demo.herokuapp.com/#!sro:ewepapihkewepinamahk)
+ - [Maskekosihk trail](https://syllabics.app/#!sro:Maskekosihk%20trail)
+ - [êwêpâpîhkêwêpinamahk](https://syllabics.app/#!sro:êwêpâpîhkêwêpinamahk)
+ - [ēwēpâpīhkēwēpinamahk](https://syllabics.app/#!sro:ēwēpâpīhkēwēpinamahk)
+ - [ewepapihkewepinamahk](https://syllabics.app/#!sro:ewepapihkewepinamahk)
 
 <!--
 It can also convert from syllabics to SRO:
 
- - [ᒣᕒᐃᕀ](https://crk-orthography-demo.herokuapp.com/#!syl:ᒣᕒᐃᕀ)
- - [ᐁᑯᓯ](https://crk-orthography-demo.herokuapp.com/#!syl:ᐁᑯᓯ)
+ - [ᒣᕒᐃᕀ](https://syllabics.app/#!syl:ᒣᕒᐃᕀ)
+ - [ᐁᑯᓯ](https://syllabics.app/#!syl:ᐁᑯᓯ)
 
 -->
 
-The source code for `crk_orthography` can be found on its [GitHub
+The source code for `cree-sro-syllabics` can be found on its [GitHub
 page][repo], but it can also be seamlessly incorporated into a Python
 project that uses `pip` by installing it with:
 
-    pip install crk_orthography
+    pip install cree-sro-syllabics
 
-This also installs command line utilities that can transliterate
-entire text files written in SRO ([sro2syllabics]) and back again
-([syllabics2sro]).
+**EDIT**: (*2018-12-06*) You can use `npm` to install
+`cree-sro-syllabics` in your JavaScript project:
 
-[sro2syllabics]: https://github.com/eddieantonio/crk_orthography#sro2syllabics
-[syllabics2sro]: https://github.com/eddieantonio/crk_orthography#syllabics2sro
+    npm install cree-sro-syllabics --save
+
+Or you can [copy-paste the `.js` file][js-source] to your project (as long as you
+keep the AGPL license comment at the top!)
+
+[js-source]: https://raw.githubusercontent.com/eddieantonio/cree-sro-syllabics.js/master/cree-sro-syllabics.js
+
+[sro2syllabics]: https://github.com/eddieantonio/cree-sro-syllabics#sro2syllabics
+[syllabics2sro]: https://github.com/eddieantonio/cree-sro-syllabics#syllabics2sro
 
 
 The future
@@ -205,5 +215,12 @@ Cree dialects. There are also a few interesting things that can be done
 to make sure SRO and syllabics conversions can be completely reversed
 without losing information about morpheme boundaries.
 
-[repo]: https://github.com/eddieantonio/crk_orthography
-[pypi]: https://pypi.org/project/crk-orthography/
+**EDIT**: (*2018-12-06*) In the original post, the library was called
+`crk_orthography`. It has been renamed to `cree-sro-syllabics`.
+
+**EDIT 2**: (*2018-12-06*) `cree-sro-syllabics` now features beta
+support for Woods Cree (Th-dialect) and Swampy Cree (N-dialect).
+
+[repo]: https://github.com/eddieantonio/cree-sro-syllabics
+[pypi]: https://pypi.org/project/cree-sro-syllabics/
+[npm]: https://www.npmjs.com/package/cree-sro-syllabics
