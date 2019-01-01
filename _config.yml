@@ -39,3 +39,4 @@ plugins:
  - jekyll-redirect-from
  - jekyll-sitemap
  - jekyll-gist
+ - jekyll-feed
