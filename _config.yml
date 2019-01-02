@@ -26,7 +26,7 @@ social:
     - https://keybase.io/eddieantonio
 
 # Default locale, if not specified.
-lang: en_CA
+lang: en-CA
 
 # Build settings
 markdown: kramdown
