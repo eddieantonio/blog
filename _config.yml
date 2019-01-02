@@ -8,6 +8,10 @@ url: "http://www.eddieantonio.ca" # the base hostname & protocol for your site
 twitter_username: _eddieantonio
 github_username:  eddieantonio
 
+author:
+  twitter: _eddieantonio
+  github: eddieantonio
+
 # Build settings
 markdown: kramdown
 drafts: no
