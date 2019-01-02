@@ -11,6 +11,7 @@ author:
   uri: https://www.eddieantonio.ca/
   twitter: &twitter _eddieantonio
   github: eddieantonio
+  linkedin: eddieantonio
 
 twitter:
   username: *twitter
