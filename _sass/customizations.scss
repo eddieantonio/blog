@@ -1,1 +1,14 @@
-// Add CSS customizations here!
+// My personal customizations that differ from minima.
+
+// Makes the description column smaller, making the social column larger.
+@media screen and (min-width: $on-large) {
+  .footer-col-2 {
+    width: -webkit-calc(25% - (#{$spacing-unit} / 2));
+    width:         calc(25% - (#{$spacing-unit} / 2));
+  }
+
+  .footer-col-3 {
+    width: -webkit-calc(40% - (#{$spacing-unit} / 2));
+    width:         calc(40% - (#{$spacing-unit} / 2));
+  }
+}
