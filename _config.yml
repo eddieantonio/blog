@@ -1,6 +1,5 @@
 # Site settings
 title: "eddieantonio/blog"
-email: easantos@ualberta.ca
 description: > # this means to ignore newlines until "baseurl:"
   My thoughts on software, linguistics, and jazz fusion.
 baseurl: "/blog" # the subpath of your site, e.g. /blog/
