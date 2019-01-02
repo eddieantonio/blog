@@ -4,22 +4,20 @@ description: > # this means to ignore newlines until "baseurl:"
   My thoughts on software, linguistics, and jazz fusion.
 baseurl: "/blog" # the subpath of your site, e.g. /blog/
 url: "https://www.eddieantonio.ca" # the base hostname & protocol for your site
-twitter_username: _eddieantonio
-github_username:  eddieantonio
 
 author:
-  name: Eddie Antonio Santos
+  name: &name Eddie Antonio Santos
   email: easantos@ualberta.ca
   uri: https://www.eddieantonio.ca/
-  twitter: _eddieantonio
+  twitter: &twitter _eddieantonio
   github: eddieantonio
 
 twitter:
-  username: _eddieantonio
+  username: *twitter
   card: summary
 
 social:
-  name: Eddie Antonio Santos
+  name: *name
   links:
     - https://twitter.com/_eddieantonio
     - https://www.linkedin.com/in/eddieantonio/
@@ -35,8 +33,7 @@ drafts: no
 permalink: pretty
 highlighter: rouge
 
-# Defaults sets everything to a post, with me as the author and comments
-# enabled.
+# Defaults sets everything to a post, with comments enabled.
 defaults:
   -
     scope:
@@ -45,12 +42,6 @@ defaults:
     values:
       layout: post
       comments: true
-  -
-    scope:
-      path: ""
-      type: "drafts"
-    values:
-      layout: post
 
 # All the gems that GitHub pages supports.
 plugins:
