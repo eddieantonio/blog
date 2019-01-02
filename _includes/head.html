@@ -1,2 +1,5 @@
 {% seo %}{% comment %} <title> and <meta> tags provided by jekyll-seo-tag {% endcomment %}
+{% if page.last_modified_at %}
+  <meta name="article:modified_time " content="{{ page.last_modified_at | date_to_xmlschema }}">
+{% endif %}
 {% feed_meta %}{% comment %} RSS Feed link provided by jekyll-feed plugin {% endcomment %}

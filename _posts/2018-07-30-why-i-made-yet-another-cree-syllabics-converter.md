@@ -1,5 +1,6 @@
 ---
 title:  Why I made yet another Cree syllabics converter
+last_modified_at: 2018-12-06
 ---
 
 ![Ruben Quinn demonstrating the Cree syllabics star chart]({{ site.baseurl }}/images/yasc/ruben-quinn-star-chart.jpg)
