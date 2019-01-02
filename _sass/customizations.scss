@@ -17,3 +17,35 @@
 // Bold the titles and indent the definitions!
 dt { font-weight: max($base-font-weight, 800) }
 dd { margin-left: 1em }
+
+// Images/figures within posts!
+.post-content {
+  p img:only-child, iframe, twitter-widget {
+    display: block;
+    margin: auto;
+    margin-bottom: .5em;
+  }
+}
+
+// Footnote sections!
+.footnotes {
+  // Add a horizontal line above.
+  &::before {
+    content: '';
+    display: block;
+    border: 1px inset;
+    margin-bottom: $spacing-unit;
+  }
+}
+
+// Hover for spoilers!
+.spoilers {
+  &, & * {
+    color: transparent;
+    outline: 1px dotted grey;
+  }
+
+  &:hover, &:active, &:hover *, &:active * {
+    color: inherit;
+  }
+}
