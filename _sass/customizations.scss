@@ -12,3 +12,8 @@
     width:         calc(40% - (#{$spacing-unit} / 2));
   }
 }
+
+// Definition lists:
+// Bold the titles and indent the definitions!
+dt { font-weight: max($base-font-weight, 800) }
+dd { margin-left: 1em }
