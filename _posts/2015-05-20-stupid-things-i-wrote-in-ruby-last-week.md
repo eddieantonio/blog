@@ -2,7 +2,7 @@
 title:  Stupid Things I Wrote in Ruby Last Week
 ---
 
-![slowpoke]({{ site.baseurl }}/images/stupid-ruby/Slowpoke.svg)
+![slowpoke]({{ '/images/stupid-ruby/Slowpoke.svg' | relative_url }})
 
 Last Saturday, I mentored the [Ladies Learning Code Introduction to
 Ruby][llcyeg].

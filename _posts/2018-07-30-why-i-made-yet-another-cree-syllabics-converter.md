@@ -3,7 +3,7 @@ title:  Why I made yet another Cree syllabics converter
 last_modified_at: 2018-12-06
 ---
 
-![Ruben Quinn demonstrating the Cree syllabics star chart]({{ site.baseurl }}/images/yasc/ruben-quinn-star-chart.jpg)
+![Ruben Quinn demonstrating the Cree syllabics star chart]({{ '/images/yasc/ruben-quinn-star-chart.jpg' | relative_url }})
 
 <small> Image source: [Ruben Quinn demonstrating the Cree syllabics star chart](https://www.youtube.com/watch?v=_08Kxo424sg)</small>
 
@@ -72,7 +72,7 @@ that goes from Edmonton to [Enoch Cree Nation][enoch]. The City of
 Edmonton unveiled the street sign, and, in the process, they unveiled an
 embarrassment:
 
-![Maskêkosihk trail rendered as "ᒪᐢᑫᑯᓯᐦᐠ  ᐟrᐊᐃl"]({{ site.baseurl }}/images/yasc/mayor-and-chief.JPG)
+![Maskêkosihk trail rendered as "ᒪᐢᑫᑯᓯᐦᐠ  ᐟrᐊᐃl"]({{ '/images/yasc/mayor-and-chief.JPG' | relative_url }})
 
 <small> Image source: [CBC](https://www.cbc.ca/news/canada/edmonton/renamed-maskekosihk-trail-part-of-city-s-ongoing-reconciliation-commitment-1.3446162)</small>
 

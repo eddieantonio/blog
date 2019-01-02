@@ -24,7 +24,7 @@ address bar:
 
 And receive the top result on the [Mozilla Developer Network][mdn].
 
-![Using mdn.io]({{ site.baseurl }}/images/chrome-search/using-mdn.gif)
+![Using mdn.io]({{ '/images/chrome-search/using-mdn.gif' | relative_url }})
 
 This avoids a trip to Google and avoids the [(formerly attrocious)
 w3schools landmines][w3s] that inevitably spring up when in search for
@@ -50,7 +50,7 @@ I'll take you through it:
 First, go to Chrome's settings and find the search category. Then select
 "Manage search engines...".
 
-![Chrome Settings]({{ site.baseurl }}/images/chrome-search/01-settings.png)
+![Chrome Settings]({{ '/images/chrome-search/01-settings.png' | relative_url }})
 
 In this modal, start tinkering around with the boxes on the lower pane.
 If you visit a site in Chrome (not in incognito mode, of course), it may
@@ -59,7 +59,7 @@ registers this information and dumps the website here. So, if you
 haven't already, give [devdocs.io][] a visit, and it should show up in
 this list.
 
-![Manage Search Engines]({{ site.baseurl }}/images/chrome-search/02-search-engines.png)
+![Manage Search Engines]({{ '/images/chrome-search/02-search-engines.png' | relative_url }})
 
 Next, edit the value in the middle column; this is the shortcut you can
 use to search quickly by simply typing this string in the omnibox
@@ -67,12 +67,12 @@ use to search quickly by simply typing this string in the omnibox
 frequent searches like devdocs, I'd recommend using a one-letter
 shortcut:
 
-![Renaming Search Engine shortcuts]({{ site.baseurl }}/images/chrome-search/03-rename.png)
+![Renaming Search Engine shortcuts]({{ '/images/chrome-search/03-rename.png' | relative_url }})
 
 And you're done! Go to the omnibox, and type the shortcut
 you just registered and search away!
 
-![Using `d` for devdocs]({{ site.baseurl }}/images/chrome-search/using-d.gif)
+![Using `d` for devdocs]({{ '/images/chrome-search/using-d.gif' | relative_url }})
 
 ## My search engines
 
@@ -86,7 +86,7 @@ devdocs, I'd often type things like `g php mongodb` to get me straight
 to the documentation that I wanted. This is still useful to work for
 minor libraries, especially those hosted on GitHub.
 
-![Using `g` for "I'm feeling lucky"]({{ site.baseurl }}/images/chrome-search/using-g.gif)
+![Using `g` for "I'm feeling lucky"]({{ '/images/chrome-search/using-g.gif' | relative_url }})
 
 `d` searches [devdocs.io][], of course.
 

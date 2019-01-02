@@ -8,7 +8,7 @@ committing lower quality than code than boring, ordinary commit messages.
 
 So: Are commits that *look* fishy...
 
-[![Commit message: "Maybe now it's working?"]({{ site.baseurl }}/images/judging-commits/josh-commit.png)][commit]
+[![Commit message: "Maybe now it's working?"]({{ '/images/judging-commits/josh-commit.png' | relative_url }})][commit]
 
 ...actually hiding dubious code?
 

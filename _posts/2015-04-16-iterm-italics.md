@@ -10,11 +10,11 @@ willing to give up!
 A minor example is inline italics fonts. Compare editing in Markdown in
 [vim-pandoc][] with italics:
 
-![vim italics]({{ site.baseurl }}/images/iterm-italics/after.png)
+![vim italics]({{ '/images/iterm-italics/after.png' | relative_url }})
 
 and without:
 
-![vim sans-italics]({{ site.baseurl }}/images/iterm-italics/before.png)
+![vim sans-italics]({{ '/images/iterm-italics/before.png' | relative_url }})
 
 Due to fun `terminfo` settings, my `$TERM` setting of
 choice---`xterm-256color`---does not claim to have codes to turn on and
