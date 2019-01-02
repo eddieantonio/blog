@@ -4,13 +4,31 @@ email: easantos@ualberta.ca
 description: > # this means to ignore newlines until "baseurl:"
   My thoughts on software, linguistics, and jazz fusion.
 baseurl: "/blog" # the subpath of your site, e.g. /blog/
-url: "http://www.eddieantonio.ca" # the base hostname & protocol for your site
+url: "https://www.eddieantonio.ca" # the base hostname & protocol for your site
 twitter_username: _eddieantonio
 github_username:  eddieantonio
 
 author:
+  name: Eddie Antonio Santos
+  email: easantos@ualberta.ca
+  uri: https://www.eddieantonio.ca/
   twitter: _eddieantonio
   github: eddieantonio
+
+twitter:
+  username: _eddieantonio
+  card: summary
+
+social:
+  name: Eddie Antonio Santos
+  links:
+    - https://twitter.com/_eddieantonio
+    - https://www.linkedin.com/in/eddieantonio/
+    - https://github.com/eddieantonio
+    - https://keybase.io/eddieantonio
+
+# Default locale, if not specified.
+lang: en_CA
 
 # Build settings
 markdown: kramdown
@@ -27,7 +45,6 @@ defaults:
       type: "posts"
     values:
       layout: post
-      author: "eddieantonio"
       comments: true
   -
     scope:
@@ -44,3 +61,4 @@ plugins:
  - jekyll-sitemap
  - jekyll-gist
  - jekyll-feed
+ - jekyll-seo-tag
