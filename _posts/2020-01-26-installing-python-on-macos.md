@@ -10,7 +10,7 @@ If you're like me (or [Randall Munroe][xkcd]), the results of typing
 [xkcd]: https://xkcd.com/
 
 After many years of frustration, here are my recommendations for
-installing Python and Python written utilities on macOS.
+installing Python and Python-written utilities on macOS.
 
 So what do I use Python for?
 ----------------------------
@@ -21,24 +21,25 @@ line**. I don't really use Python for data science—at least not with
 Jupyter notebooks. I have absolutely no idea how to use `conda`. If you
 use Python primarily for data science, this guide is _not_ written
 for you—there may be better solutions that I simply do not use.
-Everybody else, read on!
+If your use case sounds similar to mine, please read on!
 
 
 Do **NOT** install Python from python.org
 =================================
 
 It seems pretty obvious that you should install Python using the
-installer from Python's official website.
+installer from [Python's official website][python.org].
 
 ![Do you want to die?]({{ '/images/installing-python/do-you-want-to-die.jpg' | relative_url }})
 
 The problem with this is that Python installs itself in a place that is
-difficult to manage _without_ using administrator (`sudo`) privileges.
+difficult to manage _without_ using administrator (i.e., `sudo`) privileges.
 This is okay for beginners, or people who only touch Python every so
 often. However, for _my_ use cases, where I'm testing my code in
 multiple versions of Python, and have multiple [virtual environments][],
 this becomes bad news.
 
+[python.org]: https://www.python.org/
 [virtual environments]: https://docs.python.org/3/tutorial/venv.html
 
 
@@ -76,7 +77,7 @@ creates. Shims are fake versions of _all_ programs associated with
 a Python install. This allows `pyenv` to intercept a command and
 redirect it to the current or desired version of Python.
 
-To do this, **prepend** the shim directory to your path. Add this to the
+To do this, **prepend** the shim directory to your path. Add this line to the
 bottom of your [shell startup file][] (either `~/.zshrc` or
 `~/.bash_profile` depending on either how new your Mac is or if you've
 customized your shell ¯\\_(ツ)\_/¯):
@@ -147,7 +148,7 @@ you need!
 Choose your default Python
 --------------------------
 
-Now tell pyenv the default version you want to use. Do this with `pyenv
+Now tell `pyenv` the default version you want to use. Do this with `pyenv
 global`:
 
 ```sh
@@ -175,7 +176,7 @@ installed on the system path first, and _then_ try the selected Python
 version—in my case, CPython 3.8.1. You might be able to get away with
 `pyenv global 3.8.1` and not use the pre-installed system Python at all.
 
-If you don't see the version you want, perhaps your installed version of
+If you don't see the version you want to install, perhaps your installed version of
 `pyenv` is too old. Upgrade `pyenv` using Homebrew:
 
 ```sh
@@ -186,8 +187,8 @@ brew upgrade pyenv
 pipx
 ====
 
-I often want to install executables that are written in Python, and
-availble to install via `pip`. For example, I like installing
+I often want to install utilities that are written in Python, and
+available to install via `pip`. For example, I like installing
 [black][] to format my code for me.
 
 **Do not** do the following 🙅:
@@ -234,15 +235,16 @@ Managing project environments with poetry
 For each of my projects, I want an isolated environment to install
 packages. Python has historically done this... poorly. The hacky
 solution for years has been [virtual environments][], but they require
-a lot of manual work to remember to create a virtual environment,
-activate it, place all the packages you installed in `requirements.txt`.
+a lot of manual work, and you need to remember to create a virtual environment,
+activate it, place all the packages you installed in `requirements.txt`,
+and so on.
 What a mess!
 
 Then came [pipenv][]. I've used pipenv for about a year, and noticed
 a notable improvement in my workflow. However, some of the decisions
 that `pipenv`'s original creator made were questionable to say the
 least. `pipenv` is under new management, but some of the decisions and
-attitudes of the original creator have left its scars on the current
+attitudes of the original creator have left scars on the current
 state of the project.
 
 So then I switched to [Poetry][].
