@@ -30,7 +30,7 @@ Do **NOT** install Python from python.org
 It seems pretty obvious that you should install Python using the
 installer from Python's official website.
 
-![Do you want to die?]({site.basename}/images/installing-python/do-you-want-to-die.jpg)
+![Do you want to die?]({{ '/images/installing-python/do-you-want-to-die.jpg' | relative_url }})
 
 The problem with this is that Python installs itself in a place that is
 difficult to manage _without_ using administrator (`sudo`) privileges.
