@@ -1,7 +1,7 @@
 eddieantonio/blog
 -----------------
 
-This is my blog. It should be located at <https://www.eddieantonio.ca/blog>.
+This is my blog. It should be located at <https://eddieantonio.ca/blog>.
 
 Copyright
 ---------

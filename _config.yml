@@ -3,12 +3,12 @@ title: "eddieantonio/blog"
 description: > # this means to ignore newlines until "baseurl:"
   My thoughts on software, linguistics, and jazz fusion.
 baseurl: "/blog" # the subpath of your site, e.g. /blog/
-url: "https://www.eddieantonio.ca" # the base hostname & protocol for your site
+url: "https://eddieantonio.ca" # the base hostname & protocol for your site
 
 author:
   name: &name Eddie Antonio Santos
   email: easantos@ualberta.ca
-  uri: https://www.eddieantonio.ca/
+  uri: https://eddieantonio.ca/
   twitter: &twitter _eddieantonio
   github: eddieantonio
   linkedin: eddieantonio
