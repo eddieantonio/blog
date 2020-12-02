@@ -78,7 +78,7 @@ a Python install. This allows `pyenv` to intercept a command and
 redirect it to the current or desired version of Python.
 
 To do this, **prepend** the shim directory to your path. Add this line to the
-bottom of your [shell startup file][] (either `~/.zshrc` or
+**bottom** of your [shell startup file][] (either `~/.zshrc` or
 `~/.bash_profile` depending on either how new your Mac is or if you've
 customized your shell ¯\\_(ツ)\_/¯):
 
