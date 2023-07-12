@@ -7,7 +7,6 @@ url: "https://eddieantonio.ca" # the base hostname & protocol for your site
 
 author:
   name: &name Eddie Antonio Santos
-  email: easantos@ualberta.ca
   uri: https://eddieantonio.ca/
   twitter: &twitter _eddieantonio
   github: eddieantonio
