@@ -1,5 +1,5 @@
 ---
-title: "Python is a compiled language"
+title: "Python is a Compiled Language"
 ---
 
 This blog post hopes to convince you that Python is a compiled language.
@@ -625,6 +625,13 @@ nuanced distinction than "compiled" vs "interpreted". For this reason,
 I think it is important to emphasize the particular static and dynamic
 _features_ when rather than teaching the tired distinction between
 "interpreted" and "compiled" languages.
+
+---
+
+**EDIT**: For source code for all the rounds (including a bonus round!)
+check out my [GitHub repository](https://github.com/eddieantonio/python-is-compiled).
+You can also see the results for errors across different implementations
+of Python, [check out the different jobs in GitHub Actions](https://github.com/eddieantonio/python-is-compiled/actions/runs/6639910925).
 
 [PyPy]: https://www.pypy.org/
 [Mypyc]: https://mypyc.readthedocs.io/en/latest/introduction.html
