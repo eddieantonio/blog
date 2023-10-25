@@ -53,7 +53,7 @@ before continuing
 also means that you can discover the stages of your compiler by
 **deliberately creating errors** in a program.
 
-So let's discover the stages of the Python interpretation by playing a little
+So let's discover the stages of the Python interpreter by playing a little
 game I like to call...
 
 # Which! Is! The! First! Error!
@@ -363,7 +363,7 @@ code that looks like this:
 [x for x in y] = [1,2,3]
 ```
 
-But this code makes no sense! In fact, the "full" Python grammar
+But this code makes no sense! In fact, the full Python grammar
 disallows this code. To fix this, a separate, hacky stage used to exist in
 Python that would check all the assignments and make sure that the
 left-side is actually something that can be assigned to. This occurred
@@ -456,10 +456,10 @@ Let's compare this to the stages of compiling a C program from earlier:
  1. ~~preprocessing~~
  2. lexical analysis (another term for "scanning")
  3. syntactic analysis (another term for "parsing")
- 4. semantic analysis
+ 4. ~~semantic analysis~~
  5. ~~linking~~
 
-**Python still performs compilation stages before running any code**.
+**Python still performs some compilation stages before running any code**.
 Python really does compile your code first, and just like Java, it
 compiles to bytecode. The implication for error reporting is that
 **Python has compiler error messages** and not every error message in
@@ -551,7 +551,7 @@ slow---performance is multifaceted and depends on much more than the
     "full-codegen" ate up a giant amount of memory.
 
 
-What about programming language that are typically labelled as compiled?
+What about programming languages that are typically labelled as compiled?
 
 ![You wouldn't interpret a C program]({{ '/images/python-is-compiled/you-wouldnt-interpret-c.jpg' | relative_url }})
 
@@ -569,7 +569,7 @@ languages, right?
 
 Consider the [Glasgow Haskell Compiler][ghc] (GHC). One of the ways that
 I learned Haskell (and promptly forgot it 😉) is by messing around in
-the interactive console. But, as the name suggestions, GHC really does
+the interactive console. But, as the name suggests, GHC really does
 compile Haskell code.
 
 This makes being a "compiled" language no excuse for lacking an
@@ -631,7 +631,7 @@ _features_ when rather than teaching the tired distinction between
 **EDIT**: For source code for all the rounds (including a bonus round!)
 check out my [GitHub repository](https://github.com/eddieantonio/python-is-compiled).
 You can also see the results for errors across different implementations
-of Python, [check out the different jobs in GitHub Actions](https://github.com/eddieantonio/python-is-compiled/actions/runs/6639910925).
+of Python, [check out the different jobs in GitHub Actions](https://github.com/eddieantonio/python-is-compiled/actions/runs/6642358433/job/18046941923).
 
 [PyPy]: https://www.pypy.org/
 [Mypyc]: https://mypyc.readthedocs.io/en/latest/introduction.html
