@@ -95,27 +95,27 @@ Before I reveal the answer, think about what "interpreted" vs "compiled"
 language means to you. Here is a terrible Socratic dialogue that will
 hopefully make you personally reflect on what the difference is:
 
-> **Teacher**: A compiled language is one where the code is first put through
+> **Socrates**: A compiled language is one where the code is first put through
 > a compiler before it is able to be run. An example is the C programming
 > language. To run C code, first you have to run a compiler like `gcc` or
 > `clang`, and then finally you can run your code. A compiled language
 > gets converted to machine code---the ones and zeroes that your CPU
 > understands.
 >
-> **Student**: But wait, isn't Java a compiled language?
+> **Plato**: But wait, isn't Java a compiled language?
 >
-> **Teacher**: Yes, Java is a compiled language.
+> **Socrates**: Yes, Java is a compiled language.
 >
-> **Student**: But isn't output of the regular Java compiler
+> **Plato**: But isn't output of the regular Java compiler
 > a `.class` file. That's bytecode, isn't it?
 >
-> **Teacher**: That's correct. Bytecode isn't machine code, but Java is still a compiled language.
+> **Socrates**: That's correct. Bytecode isn't machine code, but Java is still a compiled language.
 > This is because there are many problems that the compiler can catch,
 > so you will need to correct errors before your program starts running.
 >
-> **Student**: What about interpreted languages?
+> **Plato**: What about interpreted languages?
 >
-> **Teacher**: An interpreted language is one that relies on a separate
+> **Socrates**: An interpreted language is one that relies on a separate
 > program, aptly called an interpreter, to actually run your code. An
 > interpreted language does not require the programmer to run a compiler
 > first. Because of this, any errors that you make will be caught *while
@@ -123,24 +123,24 @@ hopefully make you personally reflect on what the difference is:
 > no separate compiler, and *all errors that you make are caught at
 > runtime*.
 >
-> **Student**: If Python is not a compiled language, then why
+> **Plato**: If Python is not a compiled language, then why
 > does the standard library include modules called
 > [`py_compile`][pycompile] and [`compileall`][compileall]?[^2]
 >
-> **Teacher**: Well, those modules just convert Python to bytecode.
+> **Socrates**: Well, those modules just convert Python to bytecode.
 > They don't convert Python to machine code, so Python is still an
 > interpreted language.
 >
-> **Student**: So, both Python and Java are converted to bytecode?
+> **Plato**: So, both Python and Java are converted to bytecode?
 >
-> **Teacher**: Correct.
+> **Socrates**: Correct.
 
-> **Student**: Then how is Python an interpreted language and yet
+> **Plato**: Then how is Python an interpreted language and yet
 > Java is a compiled language instead?
 >
-> **Teacher**: Because all errors in Python are caught at runtime.
+> **Socrates**: Because all errors in Python are caught at runtime.
 
-[^2]: No student would ever say this.
+[^2]: Nobody would ever say this.
 
 Okay, enough of that. Let's get to the actual answer. If you run code
 above in Python 3.12...
